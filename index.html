@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="config.js"></script>
+    <script src="dataFunctions.js"></script>
+    <script src="importAndExport.js"></script>
+    <title>simplerJS</title>
+</head>
+<body>
+
+    <div id="fieldArea">
+        <input id="inputField" onblur="saveFieldData('inputField')" type="text">
+    </div>
+    
+    
+    <hr>
+    <button onclick="createNewField()">Adicionar novo campo</button>
+    
+    <hr>
+    <p>Dados na Storage</p>
+    <div id="aqui"></div>
+
+    <hr>
+    <button onclick="exportData()">Exportar dados</button>
+    <input type="file" id="importData">
+    <button onclick="importData()">Importar dados</button>
+
+    <hr>
+    <button onclick="clearAllStoragedData()">Limpar Storage</button>
+
+    <script>
+        createDataList('aqui',tempDB)
+        setExistingValues()
+    </script>
+
+    
+</body>
+</html>
