@@ -7,6 +7,7 @@
     <script src="config.js"></script>
     <script src="dataFunctions.js"></script>
     <script src="importAndExport.js"></script>
+    <script src="apis.js"></script>
     <title>simplerJS</title>
 </head>
 <body>
@@ -27,6 +28,9 @@
     <button onclick="exportData()">Exportar dados</button>
     <input type="file" id="importData">
     <button onclick="importData()">Importar dados</button>
+
+    <hr>
+    <button onclick="getDataFromApi(api.github)">Acessar API (ver no console)</button>
 
     <hr>
     <button onclick="clearAllStoragedData()">Limpar Storage</button>

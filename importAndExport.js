@@ -1,3 +1,11 @@
+//Identificação do arquivo
+var importAndExportFILE = true
+
+//Verificação de dependencias
+if(typeof dataFunctionsFILE === "undefined"){
+    alert("Verifique se importou o arquivo importAndExport.js")
+}
+
 //exporta os dados
 function exportData() {
     const link = document.createElement("a");

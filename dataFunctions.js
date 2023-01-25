@@ -1,3 +1,11 @@
+//Identificação do arquivo
+var dataFunctionsFILE = true
+
+//Verificação de dependencias
+if(typeof configFILE === "undefined"){
+    alert("Verifique se importou o arquivo config.js")
+}
+
 //função que agrega tudo a ser inicializado
 function initApp(){
     getAllStoragedData()
